@@ -1,7 +1,7 @@
 <p align='center'>
   <h1>Minespeeper Web</h1>
   <b>基于 Vue 3 的扫雷游戏</b>
-  <a href="https://minesweeper-demo.netlify.app/">在线演示</a>
+  <a href="https://minespeeper-web.netlify.app/">在线演示</a>
 </p>
 
 ## 简介
