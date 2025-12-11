@@ -7,7 +7,6 @@
   "author": "dushenyan <dushenyan88@gmail.com>",
   "homepage": "https://github.com/dushenyan/minespeeper-web",
   "repository": "https://minespeeper-web.netlify.app/",
-  "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/vue.svg",
   "scripts": {
     "build": "vite build",
     "dev": "vite --port 3333 --open",
