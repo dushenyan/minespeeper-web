@@ -74,11 +74,11 @@ pnpm preview
 ## 项目结构
 
 ```bash
-src/ 
-├── components/ # 公共组件 
-├── composables/ # 组合式函数 
-├── pages/ # 页面组件 
-├── styles/ # 样式文件 
+src/
+├── components/ # 公共组件
+├── composables/ # 组合式函数
+├── pages/ # 页面组件
+├── styles/ # 样式文件
 └── App.vue # 根组件
 ```
 
@@ -117,4 +117,3 @@ src/
 ## 贡献
 
 欢迎提交 Issue 和 Pull Request 来改进项目。
-

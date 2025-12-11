@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import type { BlockState, GameDifficulty } from '~/composables/useGame'
 import { ref } from 'vue'
 import { difficultyLevels, useGame } from '~/composables/useGame'
-import type { BlockState, GameDifficulty } from '~/composables/useGame'
 
 const {
   store,

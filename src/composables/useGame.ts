@@ -35,9 +35,14 @@ export function useGame(initialWidth = 10, initialHeight = 10, initialMineDensit
   const mineDensity = ref(initialMineDensity)
 
   const directions = [
-    [-1, -1], [-1, 0], [-1, 1],
-    [0, -1], [0, 1],
-    [1, -1], [1, 0], [1, 1],
+    [-1, -1],
+    [-1, 0],
+    [-1, 1],
+    [0, -1],
+    [0, 1],
+    [1, -1],
+    [1, 0],
+    [1, 1],
   ]
 
   function initializeBoard() {
@@ -48,8 +53,7 @@ export function useGame(initialWidth = 10, initialHeight = 10, initialMineDensit
         adjacentMines: 0,
         revealed: false,
         flagged: false,
-      })),
-    )
+      })))
     gameOver.value = false
     gameWon.value = false
   }
@@ -94,7 +98,6 @@ export function useGame(initialWidth = 10, initialHeight = 10, initialMineDensit
             const newY = y + dy
 
             if (newX >= 0 && newX < width.value && newY >= 0 && newY < height.value) {
-              // eslint-disable-next-line curly
               if (store.value[newY][newX].mine) {
                 store.value[y][x].adjacentMines++
               }
@@ -140,7 +143,6 @@ export function useGame(initialWidth = 10, initialHeight = 10, initialMineDensit
     let unrevealedCount = 0
     for (let y = 0; y < height.value; y++) {
       for (let x = 0; x < width.value; x++) {
-        // eslint-disable-next-line curly
         if (!store.value[y][x].revealed && !store.value[y][x].mine) {
           unrevealedCount++
         }

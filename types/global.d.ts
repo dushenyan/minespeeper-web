@@ -8,4 +8,3 @@ declare global {
 
 declare module 'unplugin-vue-components/vite'
 declare module 'unplugin-auto-import/vite'
-
